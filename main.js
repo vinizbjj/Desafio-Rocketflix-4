@@ -12,7 +12,7 @@ function main() {
     console.log(filmes);
     filmes = filmes.id; // Retorna o id.
 
-    console.log(`The id is ${filmes} chupa beckers`)
+    console.log(`The id is ${filmes}`)
 
 
 
