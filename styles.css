@@ -62,6 +62,7 @@ h1 {
 }
 
 .poster-filme {
+    display: none;
     width: 171px;
     height: 244px;
     margin-top: 22px;
