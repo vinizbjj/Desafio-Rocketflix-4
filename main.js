@@ -48,7 +48,7 @@ document.getElementById("btn-search").addEventListener("click", function main() 
 
     } else {
 
-        let id = (Math.floor(Math.random() * (999999 - 0) + 0));
+        let id = (Math.floor(Math.random() * (999 - 0) + 0));
         let data = get(`${BASE_URL}${id}?api_key=${API_KEY}`)
         console.log(data)
         let filmes = JSON.parse(data);
