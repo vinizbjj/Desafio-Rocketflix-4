@@ -28,6 +28,7 @@ function createFront(titleSegunda, descSegunda) {
     titulo.innerHTML = titleSegunda;
     descricao.innerHTML = descSegunda;
     postUndefined.setAttribute('src', "./assets/study.png")
+    
 }
 
 
@@ -50,7 +51,7 @@ document.getElementById("btn-search").addEventListener("click", function main() 
 
         let id = (Math.floor(Math.random() * (999 - 0) + 0));
         let data = get(`${BASE_URL}${id}?api_key=${API_KEY}`)
-        console.log(data)
+
         let filmes = JSON.parse(data);
         const title = filmes.original_title;
         const desc = filmes.overview;
@@ -59,7 +60,7 @@ document.getElementById("btn-search").addEventListener("click", function main() 
         adjustBtn.style.marginTop = "25%";
         posterCard.style.display = "flex";
 
-        console.log(id)
+
         updateFront(title, desc, posterPath)
     }
 
